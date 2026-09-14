@@ -1,7 +1,12 @@
 # NYC Traffic Collision Analysis: Identifying High Risk Time, Locations, Causes and Human Impact
 
+A Power BI dashboard that analyzes motor vehicle collision data reported by the NYPD, built to uncover when, where, and why accidents happen in New York City, and how severe they really are.
+
+## Opening Hook
+
+238,000 collisions. One clear pattern stands out: the most common cause of accidents is not the most common cause of deaths. This dashboard separates how often accidents happen from how deadly they are, so the city can focus safety efforts where they matter most.
+
 ## Table of Contents
-- [Opening Hook](#opening-hook)
 - [Project Overview](#project-overview)
 - [Business Problem and Questions](#business-problem-and-questions)
 - [Tools and Skills](#tools-and-skills)
@@ -16,17 +21,13 @@
 - [Live Dashboard Link](#live-dashboard-link)
 - [Author and Contact](#author-and-contact)
 
-## Opening Hook
-
-238,000 collisions. One clear pattern stands out: the most common cause of accidents is not the most common cause of deaths. This dashboard separates how often accidents happen from how deadly they are, so the city can focus safety efforts where they matter most.
-
 ## Project Overview
 
 This project looks at motor vehicle collision data reported by the NYPD. The goal was to answer four specific questions from the project brief, and then go further by finding an extra insight on my own. The result is a three page Power BI dashboard built to support road safety decisions.
 
 One thing worth mentioning upfront: the brief said the data covered January to August 2020. When I explored the data myself, it actually covered January 2021 to April 2023. I used the real dates found in the data instead of the dates stated in the brief, and I am reporting that clearly here so there is no confusion.
 
-**[Figure 1: Project brief screenshot]**
+**Figure 1: Project Brief**
 
 ## Business Problem and Questions
 
@@ -63,7 +64,7 @@ Each row in the dataset represents one collision. The columns fall into five gro
 | Cause | Contributing Factor, Vehicle Type |
 | Outcome | Persons Injured, Persons Killed, Pedestrians Injured, Pedestrians Killed, Cyclists Injured, Cyclists Killed, Motorists Injured, Motorists Killed |
 
-**[Figure 2: Raw dataset preview, showing column headers and a sample of rows]**
+**Figure 2: Raw Dataset**
 
 ## Data Cleaning and Transformation
 
@@ -82,7 +83,7 @@ Here is what I found in each column, and what I decided to do about it:
 
 My general rule throughout this project: never delete or replace missing values. Only leave them out of a specific chart or calculation when they genuinely cannot answer that specific question.
 
-**[Figure 3: Power Query step showing how blank values were handled, cropped to the specific step rather than the full Applied Steps pane]**
+**Figure 3: Data Cleaning**
 
 ## Data Model
 
@@ -90,53 +91,53 @@ I built a separate date table in Power Query with Year, Quarter, Month, Month Nu
 
 For the "top" style measures, like the busiest month or the most common street, I made sure the formulas would still give the correct answer even if someone filters the dashboard by year, borough, or vehicle type.
 
-**[Figure 4: Data model view, showing table relationships]**
+**Figure 4: Data Model**
 
 ## Dashboard Pages
 
-### Page 1: When Do Collisions Happen?
+### Page 1: Time Analysis
 
-**[Figure 5: Page 1 screenshot, full page]**
+**Questions answered:**
+1. Compare the percentage of total accidents by month. Is there a seasonal pattern?
+2. Break down accident frequency by day of the week and hour of the day. When do accidents happen most?
 
-**Question 1: Compare the percentage of total accidents by month. Is there a seasonal pattern?**
+**Figure 5: Time Analysis Page**
 
-March had the highest share of accidents, at 10.53 percent of the total. After March, the numbers slowly go down through the rest of the year, with November and December being the quietest months, at around 7 percent each. So yes, there is a mild seasonal pattern, but it is a gradual decline rather than a sharp spike.
+We were asked to compare accidents by month and look for a seasonal pattern. Looking at this dashboard, we can see that March recorded the highest share of accidents, at 10.53 percent of the total, and the numbers gradually decline through the rest of the year, with November and December sitting around 7 percent each. This tells us there is a seasonal pattern, but it is a slow decline rather than a sudden spike.
 
-**Question 2: Break down accident frequency by day of the week and hour of the day. When do accidents happen most?**
+We were also asked to break accidents down by day of the week and hour of the day. From this same dashboard, we can see Friday stands out as the busiest day at 37,000 accidents, and the hourly chart shows accidents building up steadily through the day before peaking at 4 PM, right in line with evening rush hour.
 
-Friday is the busiest day, with 37,000 accidents. Looking at the hour of the day, accidents build up through the morning, and peak at 4 PM, which lines up with evening rush hour.
+### Page 2: Location and Causes
 
-### Page 2: Where and Why Do Collisions Happen?
+**Questions answered:**
+1. Which street had the most accidents, and what percentage of all accidents does that represent?
+2. What was the most common cause of accidents overall, and what was the most common cause specifically in fatal accidents?
 
-**[Figure 6: Page 2 screenshot, full page]**
+**Figure 6: Location and Causes Page**
 
-**Question 3: Which street had the most accidents, and what percentage of all accidents does that represent?**
+We were asked which street had the most accidents. Looking at this dashboard, Belt Parkway stands out clearly as the top street, making up 1.56 percent of all 238,000 accidents in the dataset, ahead of Broadway in second place.
 
-Belt Parkway has the most accidents of any street, making up 1.56 percent of all 238,000 accidents in the dataset. The next closest street, Broadway, has fewer.
+We were also asked for the most common cause of accidents, and whether that changes for fatal accidents specifically. From the two charts side by side on this dashboard, we can see driver inattention or distraction is the leading cause overall, responsible for 58,000 accidents. But once we look only at accidents where someone died, the picture changes: unsafe speed and unspecified causes move to the top, and driver inattention drops down to third place. This is one of the most important findings in the whole project. The biggest cause of accidents is not the biggest cause of deaths.
 
-**Question 4: What was the most common cause of accidents overall, and what was the most common cause specifically in fatal accidents?**
-
-Overall, the most common cause is driver inattention or distraction, responsible for 58,000 accidents. But when you look only at accidents where someone died, the picture changes. Unsafe speed and unspecified causes become the top reasons, and driver inattention drops down to third place. This is one of the most important findings in the whole project: the biggest cause of accidents is not the biggest cause of deaths.
-
-### Page 3: How Severe Are These Collisions? (My Own Insight)
-
-**[Figure 7: Page 3 screenshot, full page]**
+### Page 3: Severity Analysis (My Own Insight)
 
 This page was not asked for directly in the brief. I built it to answer a question I thought mattered: out of all these accidents, who is actually most at risk of dying, and where?
 
-Out of 238,000 accidents, 116,000 led to an injury, but only 635 led to a death. That means most accidents in this data are survivable, but a small number are far deadlier than the rest.
+**Figure 7: Severity Analysis Page**
 
-The most surprising finding is about motorcycles. Motorcycles have a death rate of 3.09 percent, which is more than eleven times higher than the average across all vehicle types, and about three times higher than the next most dangerous vehicle type. Motorcycle riders face a level of risk that is completely different from everyone else on the road.
+Looking at this dashboard, out of 238,000 accidents, 116,000 led to an injury, but only 635 led to a death. Most accidents in this data are survivable, but a small number are far deadlier than the rest.
 
-Looking at boroughs, Staten Island has the highest death rate of any borough, even though it almost certainly has far fewer total accidents than busier boroughs like Manhattan or Brooklyn. This means a crash on Staten Island is more likely to be fatal than a crash somewhere with much more traffic.
+The most surprising finding sits in the vehicle type chart. Motorcycles have a death rate of 3.09 percent, more than eleven times higher than the average across all vehicle types, and about three times higher than the next most dangerous vehicle type. Motorcycle riders face a level of risk that is completely different from everyone else on the road.
+
+The borough chart on this same dashboard tells a similar story. Staten Island has the highest death rate of any borough, even though it almost certainly has far fewer total accidents than busier boroughs like Manhattan or Brooklyn. A crash on Staten Island is more likely to be fatal than a crash somewhere with much more traffic.
 
 ## Key Insights and Findings
 
-The same idea shows up again and again across all three pages: how often something happens is not the same as how dangerous it is. The most common cause of accidents is not the most common cause of deaths. The vehicle type involved in the fewest accidents, the motorcycle, has by far the highest death rate. The borough with likely fewer total accidents has the highest fatality rate. Every time, looking past the raw numbers changes what the real priority should be.
+Going back to the opening hook, the same idea shows up again and again across all three pages. How often something happens is not the same as how dangerous it is. The most common cause of accidents is not the most common cause of deaths. The vehicle type involved in the fewest accidents, the motorcycle, has by far the highest death rate. The borough with likely fewer total accidents has the highest fatality rate. Every time, looking past the raw numbers changes what the real priority should be.
 
 ## Summary and Conclusion
 
-This project answers the four questions the brief asked, and then goes one step further. The time and location pages show where and when most accidents happen. But the severity page, which I built on my own initiative, shows that the accidents happening most often are not the ones causing the most harm. A safety plan built only on accident counts would miss motorcyclists and Staten Island entirely, even though both groups face much higher real world risk.
+This project set out to answer four questions about when, where, and why collisions happen in New York City, and it does exactly that. But as the opening hook says, the real story is not in the frequency numbers alone. The severity page, built on my own initiative, shows that the accidents happening most often are not the ones causing the most harm. A safety plan built only on accident counts would miss motorcyclists and Staten Island entirely, even though both groups face much higher real world risk.
 
 ## Recommendations
 

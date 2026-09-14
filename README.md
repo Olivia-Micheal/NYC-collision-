@@ -23,7 +23,7 @@ A Power BI dashboard that analyzes motor vehicle collision data reported by the 
 
 ## Project Overview
 
-This project looks at motor vehicle collision data reported by the NYPD. The goal was to answer four specific questions from the project brief, and then go further by finding an extra insight on my own. The result is a three page Power BI dashboard built to support road safety decisions.
+This project looks at motor vehicle collision data reported by the NYPD. My goal was to answer four specific questions from the project brief, and then go further by finding an extra insight on my own. The result is a three page Power BI dashboard built to support road safety decisions.
 
 One thing worth mentioning upfront: the brief said the data covered January to August 2020. When I explored the data myself, it actually covered January 2021 to April 2023. I used the real dates found in the data instead of the dates stated in the brief, and I am reporting that clearly here so there is no confusion.
 
@@ -103,9 +103,9 @@ For the "top" style measures, like the busiest month or the most common street, 
 
 **Figure 5: Time Analysis Page**
 
-We were asked to compare accidents by month and look for a seasonal pattern. Looking at this dashboard, we can see that March recorded the highest share of accidents, at 10.53 percent of the total, and the numbers gradually decline through the rest of the year, with November and December sitting around 7 percent each. This tells us there is a seasonal pattern, but it is a slow decline rather than a sudden spike.
+Looking at this dashboard, March recorded the highest share of accidents, at 10.53 percent of the total, and the numbers gradually decline through the rest of the year, with November and December sitting around 7 percent each. This tells me there is a seasonal pattern, but it is a slow decline rather than a sudden spike.
 
-We were also asked to break accidents down by day of the week and hour of the day. From this same dashboard, we can see Friday stands out as the busiest day at 37,000 accidents, and the hourly chart shows accidents building up steadily through the day before peaking at 4 PM, right in line with evening rush hour.
+The same dashboard also breaks accidents down by day of the week and hour of the day. Friday stands out as the busiest day at 37,000 accidents, and the hourly chart shows accidents building up steadily through the day before peaking at 4 PM, right in line with evening rush hour.
 
 ### Page 2: Location and Causes
 
@@ -115,13 +115,13 @@ We were also asked to break accidents down by day of the week and hour of the da
 
 **Figure 6: Location and Causes Page**
 
-We were asked which street had the most accidents. Looking at this dashboard, Belt Parkway stands out clearly as the top street, making up 1.56 percent of all 238,000 accidents in the dataset, ahead of Broadway in second place.
+Looking at this dashboard, Belt Parkway stands out clearly as the top street, making up 1.56 percent of all 238,000 accidents in the dataset, ahead of Broadway in second place.
 
-We were also asked for the most common cause of accidents, and whether that changes for fatal accidents specifically. From the two charts side by side on this dashboard, we can see driver inattention or distraction is the leading cause overall, responsible for 58,000 accidents. But once we look only at accidents where someone died, the picture changes: unsafe speed and unspecified causes move to the top, and driver inattention drops down to third place. This is one of the most important findings in the whole project. The biggest cause of accidents is not the biggest cause of deaths.
+The two charts sitting side by side on this same dashboard answer the second question. Driver inattention or distraction is the leading cause overall, responsible for 58,000 accidents. But once I look only at accidents where someone died, the picture changes: unsafe speed and unspecified causes move to the top, and driver inattention drops down to third place. This is one of the most important findings in the whole project. The biggest cause of accidents is not the biggest cause of deaths.
 
 ### Page 3: Severity Analysis (My Own Insight)
 
-This page was not asked for directly in the brief. I built it to answer a question I thought mattered: out of all these accidents, who is actually most at risk of dying, and where?
+This page was not asked for directly in the brief. I built it myself to answer a question I thought mattered: out of all these accidents, who is actually most at risk of dying, and where?
 
 **Figure 7: Severity Analysis Page**
 
@@ -137,7 +137,7 @@ Going back to the opening hook, the same idea shows up again and again across al
 
 ## Summary and Conclusion
 
-This project set out to answer four questions about when, where, and why collisions happen in New York City, and it does exactly that. But as the opening hook says, the real story is not in the frequency numbers alone. The severity page, built on my own initiative, shows that the accidents happening most often are not the ones causing the most harm. A safety plan built only on accident counts would miss motorcyclists and Staten Island entirely, even though both groups face much higher real world risk.
+This project set out to answer four questions about when, where, and why collisions happen in New York City, and it does exactly that. But as the opening hook says, the real story is not in the frequency numbers alone. The severity page, which I built on my own initiative, shows that the accidents happening most often are not the ones causing the most harm. A safety plan built only on accident counts would miss motorcyclists and Staten Island entirely, even though both groups face much higher real world risk.
 
 ## Recommendations
 

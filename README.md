@@ -113,6 +113,8 @@ Look at the bar chart at the top of this page. Each bar is one month, and the ta
 
 Now look at the two charts below it. The first breaks accidents down by day of the week, and Friday jumps out immediately at 37,000 accidents, ahead of Thursday at 35,000 and every other day sitting between 31,000 and 34,000. The second chart traces accidents across every hour of the day, starting at 10,800 accidents at midnight, dropping to its lowest point of 4,300 around 4 to 5 AM, then climbing steadily to its highest point of 15,100 accidents at 4 PM, right where the evening rush hour begins.
 
+**Key takeaway:** Collisions in New York City are not random. They cluster around a specific season, a specific day, and a specific hour. March, Friday, and 4 PM together mark the highest risk window in the entire year, and any safety intervention should be timed around this window rather than spread evenly across the calendar.
+
 ### Page 2: Location and Causes
 
 **Questions answered:**
@@ -123,7 +125,9 @@ Now look at the two charts below it. The first breaks accidents down by day of t
 
 Look at the street ranking chart on this page. Belt Parkway sits at the top with 3,700 accidents, ahead of Broadway at 2,800, and Atlantic Avenue, Long Island Expressway, and Brooklyn Queens Expressway tied at 2,200 each. Belt Parkway alone accounts for 1.56 percent of all 238,000 accidents in this dataset.
 
-Now look at the two bar charts placed side by side lower down. The chart on the left ranks every cause of accidents overall, and driver inattention or distraction is the tallest bar at 58,000 cases, tied with unspecified causes also at 58,000, followed by failure to yield right of way at 17,000 and following too closely at 16,000. But shift your eyes to the chart on the right, which only counts accidents where someone died. The ranking flips completely. Unspecified causes lead at 175 fatal cases, unsafe speed follows at 130, and driver inattention or distraction, the overall leader, drops to third place with only 74 fatal cases. Put those two charts next to each other and the message is unmistakable: the thing causing the most accidents is not the thing causing the most deaths.
+Now look at the two bar charts placed side by side lower down. The chart on the left ranks every cause of accidents overall, and driver inattention or distraction is the tallest bar at 58,000 cases, tied with unspecified causes also at 58,000, followed by failure to yield right of way at 17,000 and following too closely at 16,000. But shift your eyes to the chart on the right, which only counts accidents where someone died. The ranking flips completely. Unspecified causes lead at 175 fatal cases, unsafe speed follows at 130, and driver inattention or distraction, the overall leader, drops to third place with only 74 fatal cases.
+
+**Key takeaway:** Belt Parkway is the single highest priority location for road safety investment in this dataset. More importantly, the cause of most accidents is not the cause of most deaths. Distraction fills the streets with minor collisions, but speed is what turns a collision fatal. Any safety campaign that treats these two causes as the same problem is solving the wrong half of the issue.
 
 ### Page 3: Severity Analysis (My Own Insight)
 
@@ -133,9 +137,12 @@ The brief never asked for this page. I built it because raw accident counts do n
 
 Start with the four numbers at the top of this page. Out of 238,000 accidents, 116,000 caused an injury, a 48.7 percent injury rate, but only 635 caused a death, a fatality rate of just 0.27 percent. Most of what happened in this dataset was survivable. But keep looking, because the next two charts show exactly where the real danger is hiding.
 
-Look at the vehicle type chart. Motorcycles sit far above every other category at a death rate of 3.09 percent, compared to 1.05 percent for utility vehicles, 0.89 percent for scooters, 0.67 percent for construction vehicles, and 0.61 percent for vehicles marked not reported. That means motorcycles are roughly eleven times more deadly than the citywide average of 0.27 percent, and close to three times more deadly than the next highest category. That gap is not subtle, it is the single biggest number on this entire dashboard.
+Look at the vehicle type chart. Motorcycles sit far above every other category at a death rate of 3.09 percent, compared to 1.05 percent for utility vehicles, 0.89 percent for scooters, 0.67 percent for construction vehicles, and 0.61 percent for vehicles marked not reported. That means motorcycles are roughly eleven times more deadly than the citywide average of 0.27 percent, and close to three times more deadly than the next highest category.
 
-Now look at the borough chart beside it. Staten Island sits at the top with a fatality rate of 0.32 percent, ahead of Bronx at 0.30 percent, Manhattan at 0.27 percent, Queens at 0.25 percent, and Brooklyn at 0.24 percent, even though it almost certainly has far fewer total accidents than Manhattan or Brooklyn. Read that chart carefully and it tells you something busier boroughs cannot: a lower number of accidents does not mean a lower level of danger.
+Now look at the borough chart beside it. Staten Island sits at the top with a fatality rate of 0.32 percent, ahead of Bronx at 0.30 percent, Manhattan at 0.27 percent, Queens at 0.25 percent, and Brooklyn at 0.24 percent, even though it almost certainly has far fewer total accidents than Manhattan or Brooklyn.
+
+**Key takeaway:** Accident volume and accident danger are two different problems, and this page is the proof. Motorcyclists face a level of risk more than ten times the citywide average, and Staten Island residents face more danger per accident than boroughs with heavier traffic. A safety strategy built only from the first two pages of this dashboard would completely miss both of these groups.
+
 
 ## Key Insights and Findings
 

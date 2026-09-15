@@ -162,11 +162,13 @@ Now look at the borough chart beside it. Staten Island sits at the top with a fa
 
 ## Key Insights and Findings
 
-Every page in this project points to the same conclusion stated in the opening hook: frequency and danger are not the same thing. The leading cause of accidents is not the leading cause of death. The vehicle type involved in the fewest accidents carries the highest death rate by far. The borough with likely fewer total accidents has the worst fatality rate of any borough. In every case, the number that happens most often is not the number that matters most.
+Three separate pages, three separate questions, and one single conclusion connects all of them: the number that happens most often is never the number that matters most. Page 1 shows accidents cluster around March, Friday, and 4 PM, telling us when danger peaks. Page 2 shows Belt Parkway carries the highest accident volume, and driver distraction causes the most accidents overall, but once a crash turns fatal, speed and unspecified causes take over completely, telling us that volume and lethality are driven by different behaviors. Page 3 confirms this pattern at its most extreme: motorcycles make up a small share of total accidents yet carry a death rate over eleven times the citywide average, and Staten Island has fewer total accidents than Manhattan or Brooklyn yet the highest fatality rate of any borough. Every page independently arrives at the same warning. A safety strategy built from accident counts alone will always miss where the real danger is hiding.
 
 ## Summary and Conclusion
 
-This project answers all four questions in the brief, and it does not stop there. The time and location pages describe where and when accidents happen most. The severity page, built entirely on my own initiative, proves that accident volume and accident danger point in two different directions. A safety strategy built only on accident counts would completely miss motorcyclists and Staten Island, even though both carry far higher real world risk than their accident numbers alone would suggest.
+This project set out to answer four direct questions from the brief, and it answers all four with exact figures pulled straight from the data: the seasonal pattern in monthly accidents, the busiest day and hour, the single riskiest street, and the gap between the leading cause of accidents and the leading cause of deaths. That alone completes the assignment.
+
+What sets this project apart is Page 3, which exists because the brief's four questions were not enough to answer the real question underneath them: who is actually at risk, and where? Building a dedicated severity page, calculating fatality rate as its own metric rather than relying on raw counts, and using it to expose motorcyclists and Staten Island as two groups invisible to a volume-only analysis is the core contribution of this project. It turns a compliance exercise into a decision-making tool. Anyone using this dashboard to plan road safety spending would be making a serious error if they stopped at Page 2.
 
 ## Recommendations
 
@@ -182,10 +184,13 @@ Every page has slicers at the top that filter by year, borough, month, or vehicl
 
 ## Live Dashboard Link
 
-[Insert Power BI published link, or a note that the dashboard is available as an image or PDF in this repository]
+[View the live dashboard on Power BI](https://app.powerbi.com/links/jPEZmnQqxY?ctid=f6f117ef-72a8-4267-9390-7c30e90fd172&pbi_source=linkShare)
 
 ## Author and Contact
 
-[Your name]
-Data Analyst, Digitaley Drive Data Analytics Bootcamp
-[LinkedIn] | [Email or contact]
+Olivia Anetoh is a Data Analyst who works with real world data to uncover business risks, performance patterns, and insights that support better decisions. This project reflects that approach end to end, from spotting a data discrepancy in the brief, to rebuilding unreliable DAX logic, to building an entire extra page of independent analysis the brief never asked for.
+
+[LinkedIn](https://www.linkedin.com/in/olivia-anetoh-955b94328)
+[GitHub](https://github.com/Olivia-Micheal)
+Email: anetohchinecherem@gmail.com
+

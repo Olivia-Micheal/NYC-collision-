@@ -27,6 +27,9 @@ This project analyzes motor vehicle collision data reported by the NYPD. I answe
 
 The brief stated the data covered January to August 2020. I checked the data myself and found it actually covers January 2021 to April 2023. I used the real dates, not the ones written in the brief, and I am stating that clearly here so there is no confusion about which range this analysis is based on.
 
+<img width="743" height="1280" alt="photo_2026-09-15_13-22-32" src="https://github.com/user-attachments/assets/9a902dd6-1201-4862-8453-6a38d913bbd4" />
+
+
 *Figure 1: Project Brief*
 
 ## Business Problem and Questions
@@ -64,6 +67,9 @@ Each row in the dataset represents one collision. I grouped the columns into fiv
 | Cause | Contributing Factor, Vehicle Type |
 | Outcome | Persons Injured, Persons Killed, Pedestrians Injured, Pedestrians Killed, Cyclists Injured, Cyclists Killed, Motorists Injured, Motorists Killed |
 
+<img width="1888" height="723" alt="nyc collision raw dataset" src="https://github.com/user-attachments/assets/36f028ea-dca0-4a2c-bc04-c858d55e3f16" />
+
+
 *Figure 2: Raw Dataset*
 
 ## Data Cleaning and Transformation
@@ -83,11 +89,15 @@ Here is what I found in each column, and the decision I made for each one:
 
 I followed one rule for the entire project: never delete or replace a missing value. Deleting a row throws away real information the rest of the analysis still needs. I only excluded a blank from a specific chart or measure when that chart genuinely could not use it, such as a blank street name never being able to win "top street."
 
+<img width="1892" height="997" alt="nyccollision power query" src="https://github.com/user-attachments/assets/e5de794b-be26-4eb5-817d-42d157de5e30" />
+
 *Figure 3: Data Cleaning*
 
 ## Data Model
 
 I built a dedicated date table in Power Query, separate from the collision data itself, with Year, Quarter, Month, Month Number, Day Name, Day Number, Week of Year, and Hour. This let me break time down in different ways without repeating logic across multiple formulas.
+<img width="1735" height="997" alt="nyc data model" src="https://github.com/user-attachments/assets/5910e95b-25c7-4ad0-ab6a-6a66912e6c44" />
+
 
 *Figure 4: Data Model*
 
@@ -106,6 +116,8 @@ This decision matters because a dashboard that gives the wrong answer the moment
 **Questions answered:**
 1. Compare the percentage of total accidents by month. Is there a seasonal pattern?
 2. Break down accident frequency by day of the week and hour of the day. When do accidents happen most?
+   
+<img width="1277" height="687" alt="Nyc collision page1" src="https://github.com/user-attachments/assets/c10d7a68-0954-4d62-b119-30b85294ec2b" />
 
 *Figure 5: Time Analysis Page*
 
@@ -113,13 +125,15 @@ Look at the bar chart at the top of this page. Each bar is one month, and the ta
 
 Now look at the two charts below it. The first breaks accidents down by day of the week, and Friday jumps out immediately at 37,000 accidents, ahead of Thursday at 35,000 and every other day sitting between 31,000 and 34,000. The second chart traces accidents across every hour of the day, starting at 10,800 accidents at midnight, dropping to its lowest point of 4,300 around 4 to 5 AM, then climbing steadily to its highest point of 15,100 accidents at 4 PM, right where the evening rush hour begins.
 
-**Key takeaway:** Collisions in New York City are not random. They cluster around a specific season, a specific day, and a specific hour. March, Friday, and 4 PM together mark the highest risk window in the entire year, and any safety intervention should be timed around this window rather than spread evenly across the calendar.
+**In Summary:** Collisions in New York City are not random. They cluster around a specific season, a specific day, and a specific hour. March, Friday, and 4 PM together mark the highest risk window in the entire year, and any safety intervention should be timed around this window rather than spread evenly across the calendar.
 
 ### Page 2: Location and Causes
 
 **Questions answered:**
 1. Which street had the most accidents, and what percentage of all accidents does that represent?
 2. What was the most common cause of accidents overall, and what was the most common cause specifically in fatal accidents?
+   
+<img width="1316" height="686" alt="Nyc collision page 2" src="https://github.com/user-attachments/assets/b661579f-b88d-4074-ad56-15186fed7247" />
 
 *Figure 6: Location and Causes Page*
 
@@ -127,11 +141,13 @@ Look at the street ranking chart on this page. Belt Parkway sits at the top with
 
 Now look at the two bar charts placed side by side lower down. The chart on the left ranks every cause of accidents overall, and driver inattention or distraction is the tallest bar at 58,000 cases, tied with unspecified causes also at 58,000, followed by failure to yield right of way at 17,000 and following too closely at 16,000. But shift your eyes to the chart on the right, which only counts accidents where someone died. The ranking flips completely. Unspecified causes lead at 175 fatal cases, unsafe speed follows at 130, and driver inattention or distraction, the overall leader, drops to third place with only 74 fatal cases.
 
-**Key takeaway:** Belt Parkway is the single highest priority location for road safety investment in this dataset. More importantly, the cause of most accidents is not the cause of most deaths. Distraction fills the streets with minor collisions, but speed is what turns a collision fatal. Any safety campaign that treats these two causes as the same problem is solving the wrong half of the issue.
+**In Summary:** Belt Parkway is the single highest priority location for road safety investment in this dataset. More importantly, the cause of most accidents is not the cause of most deaths. Distraction fills the streets with minor collisions, but speed is what turns a collision fatal. Any safety campaign that treats these two causes as the same problem is solving the wrong half of the issue.
 
 ### Page 3: Severity Analysis (My Own Insight)
 
 The brief never asked for this page. I built it because raw accident counts do not tell you who is actually dying, and I wanted an answer to that question.
+
+<img width="1323" height="688" alt="Nyc collision page 3" src="https://github.com/user-attachments/assets/80e44bfc-64f4-4244-bd1b-9385845ad621" />
 
 *Figure 7: Severity Analysis Page*
 
@@ -141,7 +157,7 @@ Look at the vehicle type chart. Motorcycles sit far above every other category a
 
 Now look at the borough chart beside it. Staten Island sits at the top with a fatality rate of 0.32 percent, ahead of Bronx at 0.30 percent, Manhattan at 0.27 percent, Queens at 0.25 percent, and Brooklyn at 0.24 percent, even though it almost certainly has far fewer total accidents than Manhattan or Brooklyn.
 
-**Key takeaway:** Accident volume and accident danger are two different problems, and this page is the proof. Motorcyclists face a level of risk more than ten times the citywide average, and Staten Island residents face more danger per accident than boroughs with heavier traffic. A safety strategy built only from the first two pages of this dashboard would completely miss both of these groups.
+**In Summary:** Accident volume and accident danger are two different problems, and this page is the proof. Motorcyclists face a level of risk more than ten times the citywide average, and Staten Island residents face more danger per accident than boroughs with heavier traffic. A safety strategy built only from the first two pages of this dashboard would completely miss both of these groups.
 
 
 ## Key Insights and Findings

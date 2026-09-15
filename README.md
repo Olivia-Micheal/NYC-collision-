@@ -2,7 +2,6 @@
 
 A Power BI dashboard that analyzes motor vehicle collision data reported by the NYPD, built to uncover when, where, and why accidents happen in New York City, and how severe they really are.
 
-## Opening Hook
 
 238,000 collisions. One clear pattern stands out: the most common cause of accidents is not the most common cause of deaths. This dashboard separates how often accidents happen from how deadly they are, so the city can focus safety efforts where they matter most.
 
@@ -110,9 +109,9 @@ This decision matters because a dashboard that gives the wrong answer the moment
 
 *Figure 5: Time Analysis Page*
 
-March recorded the highest share of accidents, at 10.53 percent of the total. The numbers decline steadily through the rest of the year, with November and December sitting around 7 percent each. There is a seasonal pattern here, but it is a slow decline, not a sudden spike.
+Look at the bar chart at the top of this page. Each bar is one month, and the tallest one is March, sitting at 10.53 percent of all accidents. Follow the bars from left to right and you can see them shrink toward the end of the year, down to 7.36 percent in November and 7.11 percent in December, the two lowest months on the chart. That shape is the seasonal pattern: a slow decline of about 3.4 percentage points from peak to trough, not a sudden drop.
 
-This same dashboard breaks accidents down by day of the week and hour of the day. Friday is the busiest day at 37,000 accidents, and the hourly chart shows accidents climbing steadily through the day before peaking at 4 PM, directly matching evening rush hour.
+Now look at the two charts below it. The first breaks accidents down by day of the week, and Friday jumps out immediately at 37,000 accidents, ahead of Thursday at 35,000 and every other day sitting between 31,000 and 34,000. The second chart traces accidents across every hour of the day, starting at 10,800 accidents at midnight, dropping to its lowest point of 4,300 around 4 to 5 AM, then climbing steadily to its highest point of 15,100 accidents at 4 PM, right where the evening rush hour begins.
 
 ### Page 2: Location and Causes
 
@@ -122,9 +121,9 @@ This same dashboard breaks accidents down by day of the week and hour of the day
 
 *Figure 6: Location and Causes Page*
 
-Belt Parkway is the single riskiest street in this dataset, accounting for 1.56 percent of all 238,000 accidents, ahead of Broadway in second place.
+Look at the street ranking chart on this page. Belt Parkway sits at the top with 3,700 accidents, ahead of Broadway at 2,800, and Atlantic Avenue, Long Island Expressway, and Brooklyn Queens Expressway tied at 2,200 each. Belt Parkway alone accounts for 1.56 percent of all 238,000 accidents in this dataset.
 
-The two charts on this page answer the second question directly. Driver inattention or distraction is the leading cause of accidents overall, responsible for 58,000 cases. Once I isolate only the accidents where someone died, the ranking changes completely: unsafe speed and unspecified causes take the top spots, and driver inattention falls to third place. This is the single most important finding in this project. The leading cause of accidents is not the leading cause of death.
+Now look at the two bar charts placed side by side lower down. The chart on the left ranks every cause of accidents overall, and driver inattention or distraction is the tallest bar at 58,000 cases, tied with unspecified causes also at 58,000, followed by failure to yield right of way at 17,000 and following too closely at 16,000. But shift your eyes to the chart on the right, which only counts accidents where someone died. The ranking flips completely. Unspecified causes lead at 175 fatal cases, unsafe speed follows at 130, and driver inattention or distraction, the overall leader, drops to third place with only 74 fatal cases. Put those two charts next to each other and the message is unmistakable: the thing causing the most accidents is not the thing causing the most deaths.
 
 ### Page 3: Severity Analysis (My Own Insight)
 
@@ -132,11 +131,11 @@ The brief never asked for this page. I built it because raw accident counts do n
 
 *Figure 7: Severity Analysis Page*
 
-Out of 238,000 accidents, 116,000 caused an injury and 635 caused a death. Most collisions in this dataset are survivable, but severity is not spread evenly. A small group carries almost all of the real danger, and the next two findings show exactly who.
+Start with the four numbers at the top of this page. Out of 238,000 accidents, 116,000 caused an injury, a 48.7 percent injury rate, but only 635 caused a death, a fatality rate of just 0.27 percent. Most of what happened in this dataset was survivable. But keep looking, because the next two charts show exactly where the real danger is hiding.
 
-Motorcycles have a death rate of 3.09 percent. That is over eleven times the citywide average, and close to three times higher than the next most dangerous vehicle type. A motorcycle rider in this dataset faces a completely different level of risk than anyone else on the road.
+Look at the vehicle type chart. Motorcycles sit far above every other category at a death rate of 3.09 percent, compared to 1.05 percent for utility vehicles, 0.89 percent for scooters, 0.67 percent for construction vehicles, and 0.61 percent for vehicles marked not reported. That means motorcycles are roughly eleven times more deadly than the citywide average of 0.27 percent, and close to three times more deadly than the next highest category. That gap is not subtle, it is the single biggest number on this entire dashboard.
 
-Staten Island has the highest fatality rate of any borough, despite almost certainly having far fewer total accidents than Manhattan or Brooklyn. A collision on Staten Island is more likely to end in death than a collision in a borough with much heavier traffic.
+Now look at the borough chart beside it. Staten Island sits at the top with a fatality rate of 0.32 percent, ahead of Bronx at 0.30 percent, Manhattan at 0.27 percent, Queens at 0.25 percent, and Brooklyn at 0.24 percent, even though it almost certainly has far fewer total accidents than Manhattan or Brooklyn. Read that chart carefully and it tells you something busier boroughs cannot: a lower number of accidents does not mean a lower level of danger.
 
 ## Key Insights and Findings
 

@@ -192,5 +192,7 @@ Olivia Anetoh is a Data Analyst who works with real world data to uncover busine
 
 [LinkedIn](https://www.linkedin.com/in/olivia-anetoh-955b94328)
 [GitHub](https://github.com/Olivia-Micheal)
+
 Email: anetohchinecherem@gmail.com
+
 
